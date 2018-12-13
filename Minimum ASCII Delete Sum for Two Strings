@@ -1,0 +1,9 @@
+4. Minimum ASCII Delete Sum for Two Strings
+
+Recursive Definition
+
+The recursive definition of this problem is very similar to the edit distance problem except when you are calculating the solution to your current index this is what you do: If the letters are the same you take from the upper left diagonal and add to the current ascii values letter. Otherwise you are taking the max from the top index and the left index. So the way you are breaking down problem is by is by letter comparison in a matrix, if you are deleting the letter, don’t calculate it, instead take the max from different indices. Otherwise if you are keeping the letter accumulate the ascii value
+
+Storing Solutions
+
+The solutions you are storing is by first calculating whether or not this letter needs to be deleted, just like the edit distance problem, if the letter needs to be deleted it is unnecessary to calculate its value, because the ideal solution is getting the total ascii value of the letters you didn’t delete 	
