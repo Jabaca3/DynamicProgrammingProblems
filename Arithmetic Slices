@@ -1,0 +1,9 @@
+3-Arithmetic Slices
+
+Recursive Definition
+
+The recursive definition of this problem is finding the amount substring that each element in those substrings differ consecutively from their adjacent elements. Its best to start from the smallest substring you can which must contain 3 elements so starting the solution at i=2 is the very logical.  
+
+Storing solutions
+
+The way I’m storing solutions to this problem is counting the length of my array and incrementing based on how many consecutive differences I had found and by the size of the array.
