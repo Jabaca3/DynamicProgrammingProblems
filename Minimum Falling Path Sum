@@ -1,0 +1,10 @@
+2-Minimum Falling Path Sum
+
+Recursive Definition
+
+The recursive definition of this problem is finding the smallest summation on indices going down a grid. Starting from the top of a grid the path only allows you to go down left, down, or down right. Finding the correct path is very simple, you simply find the min of the previously stored solutions, which in the beginning case is going to be the first row of the matrix given. For instance, in the example the first row is [1,2,3] so the first row of my solutions matrix is [1,2,3]
+
+Storing solutions
+
+The solutions to the index that you are currently at will be the minimum value of the top left, top middle, and top right plus the value you are currently at. Example: [[1,2,3], [x1, x2, x3]] 
+x1 = min of (1,2) + x1, x2 = min of (1,2,3,) + x2, x3 = min of (2,3) + x3. This is how you can store solutions to the problem. You can also have a variable that keeps track of the smallest element as you are storing solutions to solve this problem in O(n) time
