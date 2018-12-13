@@ -1,0 +1,12 @@
+1 - Stone Game
+
+Recursive Definition
+
+The recursive definition of this problem is to decide whether or not Alex would net the biggest piles of stones more than lee if they where to select optimally, would be: picking the biggest integer in the array until the array is empty. 
+The recursive solutions would be storing the initial values of the array into a matrix, and accumulate the selected value (The maximum).
+
+Storing solutions:
+
+The solutions we are storing are the accumulative value depended on the max of the previous stored values, which in the beginning case would be the initial values of the piles array. The solutions that are being stored will always be the maximum solutions of piles[i] –dp[I+1][i+d], and piles[I+d] – dp[i][i+d-1]
+if we are assuming that Alex and lee always chose optimally.  Understanding this also makes the problem unusual because if there are an even number of piles with an odd number of stones, then the solutions stored will always favor Alex.
+However, if the length of the piles where odd then then it can change the solution, which dynamic programming will help.
