@@ -1,0 +1,9 @@
+6. Palindromic Substrings
+
+Recursive definition-
+
+The recursive definition for this problem is very similar to multiple sub string problems. The first idea behind the DP definition is initializing all the diagonals to 1, this counts the substrings of just the letter itself. Now to count the continues substring you must check if the next character is equal to the one you’re currently at. dp[i][j] = 0 if dp[i+1] [j-1] = 0 else dp[i][ j] 	= 1 if s[i] == s[j] else 0. After you are done you can calculate the matrix and return the result. 
+	
+Storing Solutions
+
+For this problem I kept of getting confused when calculating my solutions especially when the substring was becoming very extended so my strategy to simplify the problem in my head was to simple just store solutions of the current problem, and then at the end calculate them with another pass, this extends the running time, but it helps me understand the problem in a more clear way.
