@@ -1,0 +1,9 @@
+5. Integer Break
+
+Recursive definition
+
+The recursive definition for this problem is kind of like calculating fib, except when calculating the integer break you are constantly overwriting previous solutions with more maximized solutions and then proceeding the next index at the end of the loop. Just like fib you are solving this problem using DP with a single array.
+
+Storing solutions
+
+The way I solved this problem was with calculating the most maximum solution dependent on the max of the previous solution and the difference between the two indices, and store this solution if and only if the current index doesn’t have a larger value. 
